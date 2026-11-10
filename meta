@@ -1,0 +1,708 @@
+# PROJECT: BUILD AN AI-POWERED ADVERTISING WORKSPACE
+
+Act as a Senior SaaS Product Architect, UI/UX Designer, Full-Stack Developer, AI Agent Engineer and Performance Marketing Technology Specialist.
+
+I want you to build a premium, production-oriented SaaS application called **AI Ads Workspace**.
+
+This is not a traditional advertising dashboard. It is an AI-powered advertising operating system where advertisers can manage their advertising activities through natral-language prompts.
+
+The platform should initially support Meta Ads and be architected to support Google Ads.
+
+The primary AI engine will be Claude.
+
+The system must combine:
+
+1. Advertising Dashboard
+2. Campaign Manager
+3. AI Advertising Agent
+4. Campaign Audit Agent
+5. Strategy Agent
+6. Budget Optimization Agent
+7. Creative Intelligence Agent
+8. Reporting Agent
+9. Automation Centre
+10. MCP Integration Layer
+
+---
+
+# 1\. TECHNOLOGY STACK
+
+Use the following architecture:
+
+Frontend:
+
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Lucide icons
+- Recharts
+
+Backend:
+
+- Node.js
+- TypeScript
+- Supabase Edge Functions or secure backend services
+
+Database:
+
+- Supabase PostgreSQL
+- Supabase Authentication
+- Supabase Storage
+- Row Level Security
+
+AI:
+
+- Anthropic Claude API
+- Claude tool calling
+- Custom MCP server integration
+
+Advertising Integrations:
+
+- Meta Marketing API
+- Google Ads API (future-ready)
+
+Architecture:
+
+- Multi-tenant SaaS
+- Modular backend
+- API integration adapters
+- Background synchronization
+- Secure credential storage
+- Execution logs
+- Role-based access control
+
+Never expose API keys or advertising access tokens in frontend code.
+
+---
+
+# 2\. DESIGN AND BRANDING
+
+Create a premium enterprise SaaS interface.
+
+Design inspiration:
+
+- Linear
+- Stripe
+- HubSpot
+- Modern AI SaaS applications
+- Professional advertising analytics platforms
+
+Visual direction:
+
+- Primary colour: Orange (#F97316)
+- Background: White / light grey
+- Typography: Dark navy
+- Cards: Clean, minimal, subtle borders
+- Rounded corners
+- Modern data visualizations
+- Professional tables
+- Responsive layout
+
+Avoid:
+
+- Overcrowded dashboards
+- Excessive gradients
+- Too many decorative elements
+- Large unnecessary headings
+- Generic admin templates
+
+The interface must look like a professionally funded SaaS product.
+
+---
+
+# 3\. MAIN APPLICATION NAVIGATION
+
+Create a persistent left sidebar.
+
+Navigation:
+
+1. Overview
+2. AI Assistant
+3. Campaign Manager
+4. Analytics
+5. Campaign Audit
+6. Media Planner
+7. Creative Intelligence
+8. Reporting Studio
+9. Automation Centre
+10. Integrations
+11. Settings
+
+Top navigation:
+
+- Organization selector
+- Platform selector
+- Ad account selector
+- Date range selector
+- Notifications
+- User profile
+
+The workspace must support multiple organizations and advertising accounts.
+
+---
+
+# 4\. OVERVIEW DASHBOARD
+
+Build a complete advertising performance dashboard.
+
+Top KPI cards:
+
+- Total Ad Spend
+- Total Revenue
+- ROAS
+- Conversions
+- Impressions
+- Clicks
+- CTR
+- CPC
+- CPM
+- CPA
+
+Include date filters:
+
+- Today
+- Yesterday
+- Last 7 Days
+- Last 30 Days
+- Last 90 Days
+- Custom Date Range
+
+Charts:
+
+A. Spend vs Revenue Trend
+B. ROAS Trend
+C. Conversion Trend
+D. Daily Advertising Performance
+
+Tables:
+
+Top Performing Campaigns:
+
+- Campaign Name
+- Platform
+- Spend
+- Revenue
+- ROAS
+- Conversions
+- CPA
+- Status
+
+Underperforming Campaigns:
+
+- Campaign Name
+- Spend
+- ROAS
+- CPA
+- Identified Issue
+- Recommended Action
+
+Additional widgets:
+
+- Platform Performance Comparison
+- Recent AI Insights
+- Recent Automation Activities
+- Pending Actions
+- Account Health
+
+All KPI calculations must use actual retrieved data. Label unavailable metrics clearly.
+
+---
+
+# 5\. AI ASSISTANT WORKSPACE
+
+This is the most important feature.
+
+Create a modern AI conversational workspace.
+
+Design:
+
+- Central prompt input
+- Conversation history
+- Suggested prompts
+- AI response area
+- Tool execution status
+- Performance data cards
+- Campaign action previews
+- Execution history
+
+Suggested prompts:
+
+1. Analyse my last 30 days of advertising performance.
+2. Audit my entire Meta Ads account.
+3. Find campaigns wasting advertising budget.
+4. Identify campaigns that can be scaled.
+5. Create a campaign strategy for my product.
+6. Recommend a new budget allocation.
+7. Analyse my creative performance.
+8. Generate a monthly performance report.
+9. Compare Meta and Google advertising performance.
+
+The AI must understand natural-language requests.
+
+Example:
+
+User:
+"Analyse my last 30 days and identify campaigns where I am wasting money."
+
+Expected AI workflow:
+
+1. Identify the selected platform and account.
+2. Retrieve campaign performance.
+3. Analyse spend, revenue, ROAS and conversions.
+4. Identify inefficient campaigns.
+5. Explain why they are underperforming.
+6. Recommend actions.
+7. Execute only actions authorized by the advertiser's automation policy.
+8. Verify and report the result.
+
+Never invent advertising performance data.
+
+---
+
+# 6\. CAMPAIGN MANAGER
+
+Create a complete campaign management module.
+
+Tabs:
+
+- Campaigns
+- Ad Sets / Ad Groups
+- Ads
+- Creatives
+
+Campaign table:
+
+- Campaign Name
+- Platform
+- Objective
+- Status
+- Daily Budget
+- Spend
+- Impressions
+- Clicks
+- CTR
+- CPC
+- Conversions
+- CPA
+- Revenue
+- ROAS
+
+Actions:
+
+- Create Campaign
+- Edit Campaign
+- Pause Campaign
+- Activate Campaign
+- Duplicate Campaign
+- Change Budget
+- View Performance
+
+Add search, sorting, filters and bulk selection.
+
+Campaign creation must support platform-specific fields and validations.
+
+Never pretend that a campaign was created unless the actual platform API confirms it.
+
+---
+
+# 7\. CAMPAIGN AUDIT AGENT
+
+Create a dedicated audit interface.
+
+The agent should analyse:
+
+- High-spend campaigns with weak results
+- Poor ROAS
+- High CPA
+- Low CTR
+- Low conversion rate
+- Poor placement performance
+- Audience inefficiency
+- Creative fatigue indicators
+- Budget allocation issues
+- Campaign structure problems
+
+Audit report format:
+
+1. Executive Summary
+2. Account Performance
+3. Campaign-Level Findings
+4. Ad Set-Level Findings
+5. Creative-Level Findings
+6. Wasted Spend Opportunities
+7. Scaling Opportunities
+8. Recommended Actions
+9. Priority Ranking
+
+Include:
+
+- Generate Audit
+- Export PDF
+- Export CSV
+
+Clearly distinguish measured facts from AI hypotheses.
+
+---
+
+# 8\. MEDIA PLANNER AND STRATEGY AGENT
+
+Build a media planning workspace.
+
+Inputs:
+
+- Business name
+- Product or service
+- Industry
+- Advertising objective
+- Monthly budget
+- Target country
+- Target audience
+- Historical performance
+- Desired KPI
+
+Outputs:
+
+- Campaign architecture
+- Budget allocation
+- Funnel strategy
+- Audience targeting strategy
+- Creative strategy
+- Campaign testing roadmap
+- KPI targets
+- Optimization schedule
+
+Allow the user to edit the generated media plan.
+
+Support Meta and Google-specific campaign structures.
+
+Do not promise guaranteed performance.
+
+---
+
+# 9\. CREATIVE INTELLIGENCE
+
+Build a creative analytics module.
+
+Show:
+
+- Ad creative preview
+- Ad copy
+- Creative type
+- Impressions
+- CTR
+- CPC
+- Conversions
+- CPA
+- ROAS
+- Spend
+
+AI capabilities:
+
+- Compare creative performance
+- Identify winning creatives
+- Detect possible creative fatigue
+- Suggest new creative concepts
+- Generate alternative ad copy
+- Recommend creative testing strategies
+
+Do not claim image or video generation is integrated unless an actual generation provider is connected.
+
+---
+
+# 10\. REPORTING STUDIO
+
+Create reporting functionality.
+
+Report types:
+
+- Daily Report
+- Weekly Report
+- Monthly Report
+- Campaign Report
+- Platform Comparison
+- Client Performance Report
+- Custom Report
+
+Allow users to:
+
+- Select reporting periods
+- Select platforms
+- Select advertising accounts
+- Choose KPIs
+- Generate AI summaries
+- Export PDF
+- Export CSV
+
+Reports should include actual source data and calculation definitions.
+
+---
+
+# 11\. AUTOMATION CENTRE
+
+Create an advanced automation management interface.
+
+Automation examples:
+
+- Automatic budget optimization
+- Campaign monitoring
+- Underperforming campaign alerts
+- ROAS monitoring
+- CPA monitoring
+- Creative fatigue monitoring
+- Scheduled reporting
+- Budget pacing
+
+Each automation must have:
+
+- Name
+- Platform
+- Account
+- Conditions
+- Actions
+- Execution limits
+- Status
+- Last execution
+- Execution history
+
+Allow advertisers to configure:
+
+- Maximum daily spend
+- Maximum budget increase
+- Maximum budget decrease
+- Minimum conversion volume
+- Minimum evaluation period
+- Permitted actions
+- Protected actions
+
+Automatic execution must only happen within an explicit advertiser-approved policy.
+
+Implement:
+
+- Daily spending caps
+- Idempotency
+- Execution queue
+- Duplicate-action prevention
+- Error handling
+- Audit logs
+- Kill switch
+- Verification after execution
+
+Never allow unrestricted AI-driven budget increases.
+
+---
+
+# 12\. INTEGRATIONS
+
+Create an integrations page with cards for:
+
+1. Meta Ads
+2. Google Ads
+3. Claude AI
+4. Supabase
+
+Meta connection:
+
+- OAuth connection
+- Account selection
+- Connection status
+- Permissions
+- Last synchronization
+- Reconnect option
+
+Google connection:
+
+- Prepare OAuth integration architecture
+- Customer account selection
+- Developer token configuration
+- Connection status
+
+Do not simulate real integrations.
+
+Show a clear disconnected state until valid credentials and authorization exist.
+
+---
+
+# 13\. DATABASE ARCHITECTURE
+
+Create a multi-tenant Supabase schema.
+
+Required tables:
+
+- users
+- organizations
+- organization\_members
+- subscriptions
+- platform\_connections
+- ad\_accounts
+- campaigns
+- ad\_sets
+- ads
+- ad\_creatives
+- daily\_insights
+- agent\_sessions
+- agent\_messages
+- agent\_tasks
+- agent\_tool\_calls
+- optimization\_rules
+- automation\_runs
+- action\_queue
+- execution\_logs
+- reports
+- report\_schedules
+- business\_metrics
+
+Requirements:
+
+- UUID primary keys
+- Foreign key relationships
+- Created and updated timestamps
+- Indexes
+- Row Level Security
+- Organization-level isolation
+- Secure credential storage
+
+Generate SQL migrations.
+
+Never expose sensitive OAuth credentials to frontend queries.
+
+---
+
+# 14\. MCP ARCHITECTURE
+
+Prepare integration with custom MCP servers.
+
+Meta MCP tool groups:
+
+Account:
+
+- meta\_list\_accounts
+- meta\_get\_account\_details
+
+Campaign:
+
+- meta\_list\_campaigns
+- meta\_create\_campaign
+- meta\_update\_campaign
+- meta\_pause\_campaign
+- meta\_activate\_campaign
+
+Ad Set:
+
+- meta\_list\_adsets
+- meta\_create\_adset
+- meta\_update\_budget
+- meta\_update\_targeting
+
+Ads:
+
+- meta\_list\_ads
+- meta\_create\_ad
+- meta\_update\_ad
+
+Analytics:
+
+- meta\_get\_insights
+- meta\_get\_placement\_performance
+- meta\_get\_audience\_performance
+- meta\_get\_creative\_performance
+
+Google MCP tool groups:
+
+- google\_list\_accounts
+- google\_list\_campaigns
+- google\_get\_insights
+- google\_create\_campaign
+- google\_update\_campaign
+- google\_update\_budget
+- google\_get\_search\_terms
+- google\_get\_keyword\_performance
+
+All tools must use authenticated backend account context.
+
+The frontend must never call MCP tools with unrestricted credentials.
+
+---
+
+# 15\. CLAUDE AI AGENT ARCHITECTURE
+
+Use Claude as the primary AI engine.
+
+Build the following agents:
+
+1. Master Advertising Agent
+2. Data Analyst Agent
+3. Campaign Manager Agent
+4. Campaign Audit Agent
+5. Strategy Agent
+6. Creative Intelligence Agent
+7. Optimization Agent
+8. Reporting Agent
+9. Profitability Agent
+
+The Master Agent should route user requests to the correct specialist.
+
+Agents should:
+
+- Retrieve real data
+- Use structured tool inputs
+- Validate results
+- Explain recommendations
+- Respect execution policies
+- Return structured outputs
+
+The AI should distinguish between:
+
+- Data retrieval
+- Analysis
+- Recommendations
+- Execution
+- Verification
+
+---
+
+# 16\. DEVELOPMENT RULES
+
+Build this project in stages.
+
+Stage 1:
+Build the UI foundation, navigation, responsive layouts, authentication and database.
+
+Stage 2:
+Build the Meta OAuth integration and data synchronization.
+
+Stage 3:
+Build Meta MCP tools.
+
+Stage 4:
+Integrate Claude AI.
+
+Stage 5:
+Build campaign management and execution.
+
+Stage 6:
+Build audit, strategy and optimization agents.
+
+Stage 7:
+Build reporting and automation.
+
+Stage 8:
+Add Google Ads integration.
+
+Important:
+
+- Do not build everything in one unstructured code file.
+- Use reusable React components.
+- Create typed API interfaces.
+- Keep business logic out of UI components.
+- Never hardcode live advertising metrics.
+- Never expose API secrets.
+- Do not claim integrations work without actual API verification.
+- Test all write operations.
+- Maintain tenant isolation.
+- Provide clear error states.
+- Make the application mobile responsive.
+
+Start by analysing the project, producing the architecture and implementing Stage 1.
+
+Do not skip the database and security foundations.
